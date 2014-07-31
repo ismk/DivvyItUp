@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+  <script src="divvy_station_data"></script>
+  <script>
+  $(function() {
+
+    $("#tags").autocomplete({
+      source: station_names
+    });
+  });
+  </script>
+</head>
+
+<body>
+
+  <div class="ui-widget">
+    <label for="tags">Tags:</label>
+    <input id="tags">
+  </div>
+
+
+</body>
+
+</html>
